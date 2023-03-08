@@ -36,7 +36,22 @@ fi
 #Create a simple bash script that prints numbers 1 – 50 and it should indicate if the number is even or odd (when it prints 1 – it should indicate that it is an odd number; when it prints 2 – it should indicate that it is an even number; and so on..) Hint: you must use loops and conditional statements.
 
 
-#!/bin/bash
+#!/bin/bash 
 
+for count in {1..50}
+do
+        if  [ $(echo $(( count % 2)) ) == 1 ]
+then
+        echo "$count is odd."
+        sleep 1
+elif
+        [ $(echo $(( count % 2)) ) == 0 ]
+then
+        echo "$count is even."
+        sleep 1
+fi
+done
 
+sleep 2
+echo "All done!
 
