@@ -32,3 +32,11 @@ elif [ -d $filename ]
         else
                 echo "File does not exist on your system."
 fi
+
+#Create a simple bash script that prints numbers 1 – 50 and it should indicate if the number is even or odd (when it prints 1 – it should indicate that it is an odd number; when it prints 2 – it should indicate that it is an even number; and so on..) Hint: you must use loops and conditional statements.
+
+
+#!/bin/bash
+
+
+
