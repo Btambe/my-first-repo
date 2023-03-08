@@ -17,3 +17,18 @@ fi
 
 #!/bin/bash
 
+read -p "Enter file name: " filename
+
+
+if [ -f $filename ]
+then
+        echo "$filename exists as a regular file on your system."
+        echo "The permissions are: `ls -lai $filename`."
+
+elif [ -d $filename ]
+        then
+                echo "$filename exists as a directory on your system."
+                echo "The permissions are: `ls -lai $filename`."
+        else
+                echo "File does not exist on your system."
+fi
